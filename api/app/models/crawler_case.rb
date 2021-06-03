@@ -1,0 +1,2 @@
+class CrawlerCase < ApplicationRecord
+end
