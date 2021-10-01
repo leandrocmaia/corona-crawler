@@ -25,5 +25,5 @@ production:
   adapter: postgresql
   url: postgresql://corona-crawler.co4onrrgymic.eu-central-1.rds.amazonaws.com
   database: coronacrawler
-  username: postgres
-  password: postgres
+  username: <%= ENV.fetch("DB.username") %>
+  password: <%= ENV.fetch("DB.password") %>
